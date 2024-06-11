@@ -12,9 +12,10 @@
         android:layout_width="409dp"
         android:layout_height="521dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/bluebird"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -24,7 +25,7 @@
         app:layout_constraintGuide_percent="0.71" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/prev4"
         android:layout_width="67dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
@@ -36,7 +37,7 @@
         app:srcCompat="@drawable/baseline_arrow_left_24" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/next4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -55,7 +56,8 @@
         android:layout_marginBottom="132dp"
         android:text="hornbird"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/next4"
         app:layout_constraintHorizontal_bias="0.561"
-        app:layout_constraintStart_toEndOf="@+id/imageView10" />
+        app:layout_constraintStart_toEndOf="@+id/prev4"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

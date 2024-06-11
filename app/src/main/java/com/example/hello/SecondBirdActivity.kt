@@ -16,7 +16,10 @@ class SecondBirdActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        binding=ActivitySecondBirdBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_second_bird)
+        setContentView(binding.root)
+        binding.prev2.setOnClickListener {
+            finish()
+        }
 
         binding.next2.setOnClickListener {
             val intent = Intent(this,ThirdBirdActivity::class.java)
